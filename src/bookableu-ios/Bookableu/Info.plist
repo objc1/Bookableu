@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DEV_API_BASE_URL</key>
+	<string>$(DEV_API_BASE_URL)</string>
+	<key>DEV_API_BASE_PORT</key>
+	<string>$(DEV_API_BASE_PORT)</string>
+	<key>PROD_API_BASE_URL</key>
+	<string>$(PROD_API_BASE_URL)</string>
+	<key>DEV_KEYCHAIN_SERVICE</key>
+	<string>$(DEV_KEYCHAIN_SERVICE)</string>
+	<key>PROD_KEYCHAIN_SERVICE</key>
+	<string>$(PROD_KEYCHAIN_SERVICE)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

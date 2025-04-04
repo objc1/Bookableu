@@ -1,0 +1,59 @@
+# Python-specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+.env
+
+# Dependency lock files (if not using them)
+Pipfile.lock
+
+# Logs
+*.log
+logs/
+
+# Local development
+*.local
+*.DS_Store  # macOS junk files
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Testing and coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.pytest_cache/
+
+# Environment variables
+.envrc
+
+# Misc
+*.swp
+*.bak
+*.tmp
+
+# Deployment
+deploy.sh
+
+# Test database
+test.db

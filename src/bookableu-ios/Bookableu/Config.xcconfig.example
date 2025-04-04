@@ -1,0 +1,8 @@
+// API Configuration
+DEV_API_BASE_URL = 0.0.0.0
+DEV_API_BASE_PORT = 8000
+PROD_API_BASE_URL = api.example.com
+
+// Keychain Configuration
+DEV_KEYCHAIN_SERVICE = com.example.app.dev
+PROD_KEYCHAIN_SERVICE = com.example.app
