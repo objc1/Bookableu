@@ -1,15 +1,46 @@
 # Bookableu
 
-<img src="src/bookableu-ios/Bookableu/Assets.xcassets/AppIcon.appiconset/(%20B%20).png" width="200"/>
-
 [![Swift](https://img.shields.io/badge/Swift-5.9-orange.svg)](https://swift.org)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.68.0+-green.svg)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+<img src="src/bookableu-ios/Bookableu/Assets.xcassets/AppIcon.appiconset/(%20B%20).png" width="200" style="border-radius: 20px;"/>
+
 ## Overview
 
 Bookableu is a comprehensive e-reader platform that includes an iOS application and a backend API. The platform allows users to read, manage, and share their e-book collection with a rich set of features.
+
+## Demo Screenshots
+
+### Reading Experience
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <img src="demo/img2.PNG" width="200" alt="Book Collection"/>
+  <img src="demo/img11.PNG" width="200" alt="Book Discussions"/>
+  <img src="demo/img10.PNG" width="200" alt="Social Feed"/>
+  <img src="demo/img9.PNG" width="200" alt="Preferences"/>
+</div>
+
+### Settings and More
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <img src="demo/img3.PNG" width="200" alt="Settings"/>
+  <img src="demo/img4.PNG" width="200" alt="Reader Interface"/>
+  <img src="demo/img5.PNG" width="200" alt="Reading Mode"/>
+  <img src="demo/img6.PNG" width="200" alt="Page Navigation"/>
+</div>
+
+### Additional Features
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <img src="demo/img1.PNG" width="200" alt="Login View"/>
+  <img src="demo/img8.PNG" width="200" alt="Settings Menu"/>
+  <img src="demo/img12.PNG" width="200" alt="Community"/>
+  <img src="demo/img7.PNG" width="200" alt="Company Logo"/>
+</div>
+
+### API Endpoints
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <img src="demo/img13.png" width="700" alt="Extra Features"/>
+</div>
 
 ## Project Structure
 

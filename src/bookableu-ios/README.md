@@ -1,12 +1,12 @@
 # Bookableu
 
-A modern, feature-rich e-reader application for iOS that allows users to read, manage, and share their e-book collection.
-
-<img src="Bookableu/Assets.xcassets/AppIcon.appiconset/(%20B%20).png" width="200"/>
-
 [![Swift](https://img.shields.io/badge/Swift-5.9-orange.svg)](https://swift.org)
 [![Platform](https://img.shields.io/badge/Platform-iOS%2016.0+-blue.svg)](https://developer.apple.com/ios/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+<img src="../../demo/logo.png" width="200" style="border-radius: 20px;"/>
+
+<p>A modern, feature-rich e-reader application for iOS that allows users to read, manage, and share their e-book collection.</p>
 
 ## Features
 
@@ -17,21 +17,6 @@ A modern, feature-rich e-reader application for iOS that allows users to read, m
 - **Cloud Synchronization**: Access your library across multiple devices with seamless sync
 - **Social Features**: Share your reading activity and connect with other readers
 - **Chat**: Discuss books with other users in real-time
-
-## Screenshots
-
-<table>
-  <tr>
-    <td><img src="images/library_view.png" width="200"/></td>
-    <td><img src="images/reader_view.png" width="200"/></td>
-    <td><img src="images/settings_view.png" width="200"/></td>
-  </tr>
-  <tr>
-    <td>Library View</td>
-    <td>Reader View</td>
-    <td>Settings</td>
-  </tr>
-</table>
 
 ## Getting Started
 

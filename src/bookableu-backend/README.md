@@ -4,6 +4,8 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.68.0+-green.svg)](https://fastapi.tiangolo.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13+-blue.svg)](https://www.postgresql.org/)
 
+<img src="../../demo/logo.png" width="200" style="border-radius: 20px;"/>
+
 This repository contains the backend API for the Bookableu application, a comprehensive platform for managing and discovering books. The backend provides a robust RESTful API with features for book management, user authentication, and content processing.
 
 ## Features
