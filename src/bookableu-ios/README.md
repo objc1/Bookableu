@@ -143,6 +143,23 @@ Bookableu is built using SwiftUI and follows the MVVM (Model-View-ViewModel) arc
 2. Use the reader controls to navigate, adjust settings, or add notes
 3. Your progress is automatically saved
 
+## Code Statistics
+
+The project consists of the following code distribution:
+
+```
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Swift                           27            833            779           4536
+XML                              6              0              0            161
+Markdown                         1             40              0            140
+JSON                             4              0              0             74
+-------------------------------------------------------------------------------
+SUM:                            38            873            779           4911
+-------------------------------------------------------------------------------
+```
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.

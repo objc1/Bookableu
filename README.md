@@ -121,6 +121,29 @@ For in-depth information about each component:
 - [iOS Application Documentation](src/bookableu-ios/README.md)
 - [Backend API Documentation](src/bookableu-backend/README.md)
 
+## Code Statistics
+
+The project consists of the following code distribution:
+
+```
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Swift                           27            833            779           4536
+Python                          15            432            916           1564
+JavaScript                       1             59             16            517
+Markdown                         3            105              0            363
+CSS                              1             59             13            353
+XML                              6              0              0            161
+HTML                             1             10              8            119
+JSON                             5              0              0             78
+Bourne Shell                     1              6              5             32
+Text                             1              0              0             19
+-------------------------------------------------------------------------------
+SUM:                            61           1504           1737           7742
+-------------------------------------------------------------------------------
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
