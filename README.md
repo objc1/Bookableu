@@ -1,66 +1,133 @@
-# 📖 Bookableu
+# Bookableu
 
-Bookableu is an AI-powered reading assistant designed to enhance the reading experience. It works with **e-books (PDF, EPUB, etc.)** and integrates an **AI model** to help users summarize content and answer questions based on their reading material.
+<img src="src/bookableu-ios/Bookableu/Assets.xcassets/AppIcon.appiconset/(%20B%20).png" width="200"/>
 
-## 🚀 Features
+[![Swift](https://img.shields.io/badge/Swift-5.9-orange.svg)](https://swift.org)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.68.0+-green.svg)](https://fastapi.tiangolo.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-- 📚 **AI-powered Reading Assistant** – Ask questions and get instant answers based on the book you're reading.
-- 📝 **Smart Summaries** – Get AI-generated summaries of chapters or sections.
-- 🔍 **Multi-format Support** – Works with **PDF, EPUB, and other popular formats**.
-- ☁ **Cloud Integration** – Future plans to host the project on **AWS**.
+## Overview
 
-## 🛠️ Tech Stack
+Bookableu is a comprehensive e-reader platform that includes an iOS application and a backend API. The platform allows users to read, manage, and share their e-book collection with a rich set of features.
 
-- **AI & Machine Learning**: Open-source **LLM (Large Language Model)**
-- **Backend**: Python, Flask/FastAPI (to connect AI model)
-- **Frontend**: iOS (Swift, SwiftUI)
-- **Database**: PostgreSQL (TBD)
-- **Hosting**: AWS / Vercel (TBD)
-- **Version Control**: Git & GitHub
+## Project Structure
 
-## 📂 Project Roadmap
+The project consists of two main components:
 
-✅ **Phase 1 (Weeks 1-5):**  
-- Research AI models & set up tools  
-- Create GitHub repository  
-- Define the tech stack  
+- **iOS Application** (`src/bookableu-ios/`): A SwiftUI-based iOS app for reading and managing e-books
+- **Backend API** (`src/bookableu-backend/`): A FastAPI-based Python backend providing authentication, book management, and other services
 
-🔄 **Phase 2 (Weeks 6-7):**  
-- Develop a **working AI pipeline** (fetch text → prepare → process request-response)  
-- MVP of the AI assistant  
+## Features
 
-🔜 **Phase 3 (Weeks 8-12):**  
-- Build frontend (Website or Mobile App)  
-- Connect AI pipeline via API  
-- Improve AI responses & UX  
+### iOS Application
+- Multiple e-book format support (PDF, EPUB)
+- Library management and organization
+- Customizable reading experience
+- Reading statistics and progress tracking
+- Cloud synchronization
+- Social features and book discussions
 
-## 🔧 Installation (For Developers)
+### Backend API
+- User authentication and authorization
+- Book catalog management
+- Advanced search with machine learning
+- E-book processing and content extraction
+- AI-powered book recommendations
+- Analytics and usage tracking
 
-1. **Clone this repository**  
-   ```bash
-   git clone git@github.com:objc1/Bookableu.git
-   cd bookableu
-   ```
-2. TBA
+## Architecture
 
-## FAQ
-Q: Why is iOS the main platform for this project? <br>
-A: I have the most experience with iOS development, so it makes the most sense for me to start there. It allows me to build and iterate more efficiently.
+### iOS Application Architecture
+- **MVVM Design Pattern**: Separation of UI (Views), Data (Models), and Logic (ViewModels)
+- **SwiftUI Framework**: Declarative UI framework for building the interface
+- **SwiftData**: Local persistence layer for offline storage of books and user data
+- **Combine Framework**: Reactive programming for handling asynchronous events
+- **Core components**:
+  - `BookReader`: Core reading experience with format-specific rendering
+  - `LibraryManager`: Book collection and organization
+  - `UserProvider`: Authentication and user profile management
+  - `APIService`: Communication with the backend API
 
-Q: Will the LLM be integrated locally or via an API? <br>
-A: For now, I’m leaning toward using an API since it’s easier to implement and maintain in the early stages of the project.
+### Backend Architecture
+- **FastAPI Framework**: High-performance asynchronous API framework
+- **PostgreSQL Database**: Relational database for structured data storage
+- **SQLAlchemy ORM**: Object-relational mapping for database interactions
+- **JWT Authentication**: Secure token-based authentication system
+- **Core components**:
+  - RESTful API endpoints
+  - Background task processing
+  - Machine learning pipeline for recommendations
+  - E-book content extraction and analysis
 
-Q: What makes Bookableu different from other reading apps? <br>
-A: Unlike standard e-book readers, Bookableu integrates AI to enhance the reading experience. It helps with summaries, explanations, and answering questions directly based on the book’s content, making reading more engaging and interactive.
+## Technology Stack
 
-Q: What AI model will you use? <br>
-A: I plan to use an API like OpenAI’s GPT, Google Gemini, Anthropic Claude, depending on performance, cost, and feasibility. If I decide to have an integrated local model it will be an open-source LLM. For example: Mistral 7B, LLaMA 3, Google Gemma.
+### iOS Application
+- **Swift 5.9+**: Programming language
+- **SwiftUI**: UI framework
+- **SwiftData**: Persistence framework
+- **PDFKit**: Native PDF rendering
+- **FolioReaderKit**: EPUB rendering and management
+- **KeychainAccess**: Secure credential storage
+- **Alamofire**: Networking library
+- **Kingfisher**: Image caching and loading
 
-Q: Will there be a web version of Bookableu? <br>
-A: Possibly! While iOS is the main platform for now, I’m considering developing a web or cross-platform mobile version later using React.js or Flutter.
+### Backend
+- **Python 3.8+**: Programming language
+- **FastAPI**: Web framework
+- **PostgreSQL**: Database
+- **SQLAlchemy**: ORM
+- **PyJWT**: Authentication
+- **Passlib**: Password hashing
+- **PyMuPDF & ebooklib**: E-book processing
+- **scikit-learn & faiss-cpu**: Machine learning
+- **OpenAI API**: AI integration
+- **AWS S3**: File storage
 
-Q: Will Bookableu support multiple languages? <br>
-A: Initially, it will focus on English, but adding support for French, Spanish, and other languages is definitely something I’d like to explore.
+## Integration Flow
 
-Q: Will this project remain open-source? <br>
-A: Right now, it’s a personal project, but I’m open to collaboration and contributions in the future.
+The iOS application and backend API communicate through a RESTful API:
+
+1. **Authentication Flow**:
+   - User credentials are sent to the backend
+   - Backend validates and returns JWT tokens
+   - iOS app stores tokens securely in Keychain
+   - Token refresh mechanism handles expiration
+
+2. **Book Management Flow**:
+   - Books are uploaded from iOS to backend
+   - Backend processes and extracts metadata
+   - Processed books are made available for download
+   - Reading progress is synchronized between devices
+
+3. **Social & Recommendation Flow**:
+   - User reading habits are analyzed
+   - AI models generate personalized recommendations
+   - Users can connect and share reading experiences
+   - Book discussions are synchronized in real-time
+
+## Development Practices
+
+- **Git Flow**: Feature branch workflow for collaborative development
+- **CI/CD**: Automated testing and deployment pipelines
+- **Code Reviews**: Peer review process for all changes
+- **Documentation**: Comprehensive inline and external documentation
+- **Testing**: Unit, integration, and UI testing
+
+## Detailed Component Documentation
+
+For in-depth information about each component:
+
+- [iOS Application Documentation](src/bookableu-ios/README.md)
+- [Backend API Documentation](src/bookableu-backend/README.md)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Maxim Leypunskiy - max.leypunskiy@outlook.com
+
+Project Links:
+- GitHub: [https://github.com/objc1/Bookableu](https://github.com/objc1/Bookableu)
